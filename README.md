@@ -1,7 +1,9 @@
-🛡️ PII-Shield: AI-Driven Privacy Gateway
+**🛡️ PII-Shield: AI-Driven Privacy Gateway**
+
 An enterprise-grade, privacy-preserving MERN middleware that intercepts raw text and files to redact Personally Identifiable Information (PII). By executing an edge-optimized BERT-base-NER Transformer model 100% locally, it functions as an on-premise compliance firewall preventing data leakage to public cloud LLMs.
 
-🛠️ System Architecture
+**🛠️ System Architecture**
+
 Ingestion Layer: Accepts text strings or batch .txt documents via a modern React interface.
 
 Deterministic Layer (Regex): Instantly filters structured data like mobile numbers and emails.
@@ -12,7 +14,8 @@ Tokenization Mapping: Replaces sensitive text with index-persistent tokens (e.g.
 
 Audit Logging: Saves anonymized transaction metadata securely to MongoDB for dashboard analytics.
 
-✨ Features
+**✨ Features**
+
 🧠 100% Local Inference: Zero outbound network requests; runs completely offline via CPU-quantized models.
 
 ⚡ Optimized Latency: Utilizes a Singleton Pattern for model instantiation, maintaining a processing speed of <200ms.
@@ -23,7 +26,8 @@ Audit Logging: Saves anonymized transaction metadata securely to MongoDB for das
 
 📂 File Stream Support: Built-in multipart document stream using multer to handle batch document scrubbing.
 
-💻 Tech Stack
+**💻 Tech Stack**
+
 Frontend: React.js, Axios, Modern Glassmorphism CSS
 
 Backend: Node.js, Express.js
